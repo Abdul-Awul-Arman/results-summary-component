@@ -1,0 +1,63 @@
+/* this for variable font */
+@font-face{
+    font-family: 'HankenGrotesk';
+    font-display: swap;
+    font-weight: 100 900;
+    src:url(/assets/fonts/HankenGrotesk-VariableFont_wght.ttf) format(truetype)
+}
+
+/* @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100;500;700;800&display=swap'); */
+
+/* set the variable */
+:root{
+
+/* Primary Color */
+--LightRed: hsl(0, 100%, 67%);
+--OrangeyYellow: hsl(39, 100%, 56%);
+--GreenReal: hsl(166, 100%, 37%);
+--CobaltBlue: hsl(234, 85%, 45%);
+
+/* GradientsColor */
+
+/* background-color */
+--LightSlateBlue: hsl(252, 100%, 67%);
+--LightRoyalBlue: hsl(241, 81%, 54%);
+
+/* circle-color */
+--VioletBlue: hsla(256, 72%, 46%, 1);
+--PersianBlue: hsla(241, 72%, 46%, 0);
+
+/* Neutral Color */
+
+--White: hsl(0, 0%, 100%);
+--PaleBlue: hsl(221, 100%, 96%);
+--LightLavender: hsl(241, 100%, 89%);
+--DarkGrayBlue: hsl(224, 30%, 27%);
+
+--font-family:'HankenGrotesk';
+}
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    font: inherit;
+    
+}
+
+html{
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    box-sizing: inherit;
+    font-family: var(--font-family);
+}
+
+p{
+    font-size: 1.2rem;
+}
+
+main{
+    
+}
