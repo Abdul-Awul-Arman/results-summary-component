@@ -12,27 +12,29 @@
 :root{
 
 /* Primary Color */
---LightRed: hsl(0, 100%, 67%);
---OrangeyYellow: hsl(39, 100%, 56%);
---GreenReal: hsl(166, 100%, 37%);
---CobaltBlue: hsl(234, 85%, 45%);
+--LightRed: 0, 100%, 67%;
+--OrangeyYellow: 39, 100%, 56%;
+--GreenReal: 166, 100%, 37%;
+--CobaltBlue: 234, 85%, 45%;
 
 /* GradientsColor */
 
 /* background-color */
---LightSlateBlue: hsl(252, 100%, 67%);
---LightRoyalBlue: hsl(241, 81%, 54%);
+--LightSlateBlue: 252, 100%, 67%;
+--LightRoyalBlue:241, 81%, 54%;
+
+--background:linear-gradient(var());
 
 /* circle-color */
---VioletBlue: hsla(256, 72%, 46%, 1);
---PersianBlue: hsla(241, 72%, 46%, 0);
+--VioletBlue: 256, 72%, 46%, 1;
+--PersianBlue: 241, 72%, 46%, 0;
 
 /* Neutral Color */
 
---White: hsl(0, 0%, 100%);
---PaleBlue: hsl(221, 100%, 96%);
---LightLavender: hsl(241, 100%, 89%);
---DarkGrayBlue: hsl(224, 30%, 27%);
+--White: 0, 0%, 100%;
+--PaleBlue: 221, 100%, 96%;
+--LightLavender: 241, 100%, 89%;
+--DarkGrayBlue: 224, 30%, 27%;
 
 --font-family:'HankenGrotesk';
 }
@@ -40,10 +42,6 @@
     margin: 0;
     padding: 0;
     font: inherit;
-    
-}
-
-html{
     box-sizing: border-box;
 }
 
@@ -53,7 +51,6 @@ html,body{
 }
 
 body{
-    box-sizing: inherit;
     font-family: var(--font-family);
     display: grid;
     place-content: center;
@@ -67,9 +64,58 @@ p{
 main{
     width: 31.5rem;
     background-color:var(--White);
-    box-shadow: 0px 0px 40px var(--VioletBlue) ;
+    box-shadow: .5rem 1rem 3rem hsl(var(--DarkGrayBlue),.2);
+    border: 1px solid black;
+    border-radius: 2rem;
+    overflow: hidden;
+    
 }
 /* result section styling */
+.result{
+    max-width: 50%;
+    background:linear-gradient(hsl(var(--LightSlateBlue)),hsl(var(--LightRoyalBlue)));
+    text-align: center;
+    color:hsl(var(--White));
+    border-radius: 2rem;
+    display: grid;
+    gap: 1rem;
+    padding: 1.5rem 2rem;
+}
+
+.result h1{
+    color:hsl(var(--White),.6);
+    font-weight:500;
+}
+
+.result_score{
+    background:linear-gradient(hsl(var(--LightRoyalBlue)),hsl(var(--LightSlateBlue),.1));
+    margin-inline: 2rem;
+    border-radius: 100vw;
+    width: 5rem;
+    font-size: .6em;
+    font-weight: bold;
+    padding: 1.5rem 1.5rem;
+    color:hsl(var(--White),.6);
+    box-sizing: content-box;
+}
+
+.result_score span{
+    color: hsl(var(--White));
+    display: block;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.result_first_comment{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.result_second_comment{
+    font-size: .8rem;
+    color:hsl(var(--White),.6)
+}
+
 
 
 
