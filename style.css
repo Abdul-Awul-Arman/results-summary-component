@@ -65,8 +65,7 @@ main{
     width: 31.5rem;
     background-color:var(--White);
     box-shadow: .5rem 1rem 3rem hsl(var(--DarkGrayBlue),.2);
-    border: 1px solid black;
-    border-radius: 2rem;
+    border-radius: 1.3rem;
     overflow: hidden;
     
 }
@@ -76,27 +75,37 @@ main{
     background:linear-gradient(hsl(var(--LightSlateBlue)),hsl(var(--LightRoyalBlue)));
     text-align: center;
     color:hsl(var(--White));
-    border-radius: 2rem;
     display: grid;
-    gap: 1rem;
-    padding: 1.5rem 2rem;
+    gap:1rem;
+    border-radius: 1.3rem;
+    padding: 2.3rem 2rem;
 }
 
 .result h1{
     color:hsl(var(--White),.6);
-    font-weight:500;
+    font-weight:bold;
+    font-size: 1rem;
+
 }
 
 .result_score{
-    background:linear-gradient(hsl(var(--LightRoyalBlue)),hsl(var(--LightSlateBlue),.1));
-    margin-inline: 2rem;
-    border-radius: 100vw;
-    width: 5rem;
-    font-size: .6em;
+    
+    font-size: .8em;
     font-weight: bold;
-    padding: 1.5rem 1.5rem;
     color:hsl(var(--White),.6);
-    box-sizing: content-box;
+}
+
+.resutl-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: red;
+    text-align: center;
+    width: 8rem;
+    aspect-ratio: 1/1;
+    margin-inline:auto ;
+    border-radius: 100vw;
+    background:linear-gradient(hsl(var(--VioletBlue)),hsl(var(--LightSlateBlue),0));
 }
 
 .result_score span{
@@ -107,13 +116,16 @@ main{
 }
 
 .result_first_comment{
-    font-size: 2rem;
+    font-size: 1.4rem;
     font-weight: bold;
 }
 
 .result_second_comment{
     font-size: .8rem;
-    color:hsl(var(--White),.6)
+    color:hsl(var(--White),.6);
+    padding: 0 .3rem .1rem .5rem;
+    font-weight: 400;
+    
 }
 
 
