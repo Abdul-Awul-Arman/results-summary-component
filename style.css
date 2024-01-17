@@ -1,12 +1,12 @@
 /* this for variable font */
-/* @font-face {
+@font-face {
     font-family: 'HankenGrotesk';
     font-display: swap;
     font-weight: 100 900;
     src: url(assets/fonts/HankenGrotesk-VariableFont_wght.ttf) format(truetype)
-} */
+}
 
-@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100;500;700;800&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100;500;700;800&display=swap'); */
 
 /* set the variable */
 :root {
@@ -50,17 +50,20 @@
     box-sizing: border-box;
 }
 
-html,
-body {
+html{
     height: 100%;
     width: 100%;
+    overflow: hidden;
 }
+
 
 body {
     font-family: var(--font-family);
     display: flex;
     align-items: center;
     background-color: hsl(var(--PaleBlue));
+    height: 100%;
+    width: 100%;
 }
 
 p {
@@ -240,7 +243,7 @@ main {
 
 
 
-@media all and (max-width:600px) {
+/* @media all and (max-width:600px) {
 
     body{
         display: block;
@@ -260,9 +263,6 @@ main {
         border-bottom-right-radius: 2rem;
     }
 
-    .result_second_comment{
-    }
 
 
-
-}
+} */
