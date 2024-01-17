@@ -1,227 +1,235 @@
 /* this for variable font */
-@font-face{
+@font-face {
     font-family: 'HankenGrotesk';
     font-display: swap;
     font-weight: 100 900;
-    src:url(/assets/fonts/HankenGrotesk-VariableFont_wght.ttf) format(truetype)
+    src: url(assets/fonts/HankenGrotesk-VariableFont_wght.ttf) format(truetype)
 }
 
 /* @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100;500;700;800&display=swap'); */
 
 /* set the variable */
-:root{
+:root {
 
-/* Primary Color */
---LightRed: 0, 100%, 67%;
---OrangeyYellow: 39, 100%, 56%;
---GreenReal: 166, 100%, 37%;
---CobaltBlue: 234, 85%, 45%;
+    /* Primary Color */
+    --LightRed: 0, 100%, 67%;
+    --OrangeyYellow: 39, 100%, 56%;
+    --GreenReal: 166, 100%, 37%;
+    --CobaltBlue: 234, 85%, 45%;
 
-/* GradientsColor */
+    /* GradientsColor */
 
-/* background-color */
---LightSlateBlue: 252, 100%, 67%;
---LightRoyalBlue:241, 81%, 54%;
+    /* background-color */
+    --LightSlateBlue: 252, 100%, 67%;
+    --LightRoyalBlue: 241, 81%, 54%;
 
---background:linear-gradient(var());
+    --background: linear-gradient(var());
 
---padding:1rem;
+    --padding: 1rem;
 
-/* circle-color */
---VioletBlue: 256, 72%, 46%, 1;
---PersianBlue: 241, 72%, 46%, 0;
+    /* circle-color */
+    --VioletBlue: 256, 72%, 46%, 1;
+    --PersianBlue: 241, 72%, 46%, 0;
 
-/* Neutral Color */
+    /* Neutral Color */
 
---White: 0, 0%, 100%;
---PaleBlue: 221, 100%, 96%;
---LightLavender: 241, 100%, 89%;
---DarkGrayBlue: 224, 30%, 27%;
+    --White: 0, 0%, 100%;
+    --PaleBlue: 221, 100%, 96%;
+    --LightLavender: 241, 100%, 89%;
+    --DarkGrayBlue: 224, 30%, 27%;
 
---font-family:'HankenGrotesk';
+    --font-family: 'HankenGrotesk';
 }
-*,*::after,*::before{
+
+*,
+*::after,
+*::before {
     margin: 0;
     padding: 0;
     font: inherit;
     box-sizing: border-box;
 }
 
-html,body{
+html,
+body {
     height: 100%;
     width: 100%;
 }
 
-body{
+body {
     font-family: var(--font-family);
-    display: grid;
-    place-content: center;
-    background-color: var(--PaleBlue);
+    display: flex;
+    align-items: center;
+    background-color: hsl(var(--PaleBlue));
 }
 
-p{
+p {
     font-size: 1.2rem;
 }
 
-main{
+main {
     width: 31.5rem;
-    background-color:var(--White);
-    box-shadow: .5rem 1rem 3rem hsl(var(--DarkGrayBlue),.2);
+    background-color: var(--White);
+    box-shadow: .5rem 1rem 3rem hsl(var(--DarkGrayBlue), .2);
     border-radius: 1.3rem;
     overflow: hidden;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    
+    margin: 0 auto;
 }
+
 /* result section styling */
-.result{
-    background:linear-gradient(hsl(var(--LightSlateBlue)),hsl(var(--LightRoyalBlue)));
+.result {
+    background: linear-gradient(hsl(var(--LightSlateBlue)), hsl(var(--LightRoyalBlue)));
     text-align: center;
-    color:hsl(var(--White));
+    color: hsl(var(--White));
     display: grid;
-    gap:1.5rem;
+    gap: 1.5rem;
     border-radius: 1.3rem;
     padding: var(--padding) 2rem;
     grid-column: 1/3;
 }
 
-.result h1{
-    color:hsl(var(--White),.6);
-    font-weight:bold;
+.result h1 {
+    color: hsl(var(--White), .6);
+    font-weight: bold;
     font-size: 1rem;
     margin-bottom: .5rem;
 
 }
 
-.result_score{
-    
+.result_score {
+
     font-size: .8em;
     font-weight: bold;
-    color:hsl(var(--White),.6);
+    color: hsl(var(--White), .6);
 }
 
-.resutl-div{
+.resutl-div {
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
     width: 8rem;
     aspect-ratio: 1/1;
-    margin-inline:auto ;
+    margin-inline: auto;
     border-radius: 100vw;
-    background:linear-gradient(hsl(var(--VioletBlue)),hsl(var(--LightSlateBlue),0));
+    background: linear-gradient(hsl(var(--VioletBlue)), hsl(var(--LightSlateBlue), 0));
 }
 
-.result_score span{
+.result_score span {
     color: hsl(var(--White));
     display: block;
     font-size: 3rem;
     font-weight: bold;
 }
 
-.result_first_comment{
+.result_first_comment {
     font-size: 1.4rem;
     font-weight: bold;
 }
 
-.result_second_comment{
+.result_second_comment {
     font-size: .8rem;
-    color:hsl(var(--White),.6);
+    color: hsl(var(--White), .6);
     padding: 0 .3rem .1rem .5rem;
     font-weight: 400;
-    
+
 }
 
 /* summary section styling start here */
-.summary{
+.summary {
     width: 100%;
-    grid-column:3/-1;
+    grid-column: 3/-1;
     padding: 1.2rem;
     padding-top: var(--padding);
 }
 
-.summary h3{
+.summary h3 {
     color: var(--DarkGrayBlue);
     font-weight: bold;
     font-size: 1rem;
 }
 
-.summery_score_sub{
+.summery_score_sub {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin:.8rem 0;
-    padding: .5rem;
+    margin: .8rem 0;
+    padding: .6rem;
     background-color: hsl(var(--CobaltBlue));
     border-radius: .5rem;
 }
 
-.one{
-    background-color:hsl(var(--LightRed),.1);
-    color:hsl(var(--LightRed))
-}
-.tow{
-    background-color:hsl(var(--OrangeyYellow),.1);
-    color:hsl(var(--OrangeyYellow))
-}
-.three{
-    background-color:hsl(var(--GreenReal),.1);
-    color:hsl(var(--GreenReal))
-}
-.four{
-    background-color:hsl(var(--CobaltBlue),.1);
-    color:hsl(var(--CobaltBlue))
+.one {
+    background-color: hsl(var(--LightRed), .1);
+    color: hsl(var(--LightRed))
 }
 
-.summery_score_sub:first-child{
+.tow {
+    background-color: hsl(var(--OrangeyYellow), .1);
+    color: hsl(var(--OrangeyYellow))
 }
-.summery_score_sub p{
+
+.three {
+    background-color: hsl(var(--GreenReal), .1);
+    color: hsl(var(--GreenReal))
+}
+
+.four {
+    background-color: hsl(var(--CobaltBlue), .1);
+    color: hsl(var(--CobaltBlue))
+}
+
+.summery_score_sub:first-child {}
+
+.summery_score_sub p {
     font-size: .8rem;
     font-weight: 500;
-    margin-left:.5rem ;
+    margin-left: .5rem;
 }
 
-.score_logo{
+.score_logo {
     display: flex;
     align-items: center;
 }
 
-.score_logo svg{
-    width:.9rem;
+.score_logo svg {
+    width: .9rem;
 }
 
-.button{
+.button {
     display: block;
     width: 100%;
     padding: .8rem 0;
-    background-color:hsl(var(--DarkGrayBlue));
-    margin-inline:auto;
+    background-color: hsl(var(--DarkGrayBlue));
+    margin-inline: auto;
     margin-top: 2rem;
     border-radius: 100vw;
-    color:aliceblue;
+    color: aliceblue;
     font-weight: 600;
     border: none;
     font-size: .8rem;
 }
 
-.summery_score_sub_score{
-    color:hsl(var(--DarkGrayBlue),.5);
+.summery_score_sub_score {
+    color: hsl(var(--DarkGrayBlue), .5);
 }
 
-.summery_score_sub p{
+.summery_score_sub p {
     font-weight: bold;
 }
 
-.summery_score_sub_score span{
-    color:hsl(var(--DarkGrayBlue));
+.summery_score_sub_score span {
+    color: hsl(var(--DarkGrayBlue));
 }
 
-.summary-wrap{
+.summary-wrap {
     margin-top: 2rem;
 }
 
-.button:active{
-    background:linear-gradient(hsl(var(--LightSlateBlue)),hsl(var(--LightRoyalBlue)));
+.button:active {
+    background: linear-gradient(hsl(var(--LightSlateBlue)), hsl(var(--LightRoyalBlue)));
 }
 
 
@@ -232,20 +240,29 @@ main{
 
 
 
-@media  all and (max-width:600px) {
-   body{
-    display: block;
-   }
-   main{
-     display: flex;
-     flex-direction: column;
-     border-radius: 0;
-   }
+@media all and (max-width:600px) {
 
-   .result{
-     width: 100vw;
-     border-radius: 0;
-   }
+    body{
+        display: block;
+    }
+    main {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        border-radius: 0;
 
-    
+    }
+
+    .result{
+        border-radius: 0;
+        border-bottom-left-radius: 2rem;
+        border-bottom-right-radius: 2rem;
+    }
+
+    .result_second_comment{
+    }
+
+
+
 }
