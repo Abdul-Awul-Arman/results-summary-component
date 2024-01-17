@@ -53,7 +53,6 @@
 html{
     height: 100%;
     width: 100%;
-    overflow: hidden;
 }
 
 
@@ -64,6 +63,7 @@ body {
     background-color: hsl(var(--PaleBlue));
     height: 100%;
     width: 100%;
+    overflow: hidden;
 }
 
 p {
@@ -243,7 +243,7 @@ main {
 
 
 
-/* @media all and (max-width:600px) {
+@media all and (max-width:600px) {
 
     body{
         display: block;
@@ -265,4 +265,4 @@ main {
 
 
 
-} */
+}
