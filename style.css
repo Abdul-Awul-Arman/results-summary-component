@@ -3,7 +3,11 @@
     font-family: 'HankenGrotesk';
     font-display: swap;
     font-weight: 100 900;
+<<<<<<< HEAD
     src: url(assets/fonts/HankenGrotesk-VariableFont_wght.ttf) format(truetype)
+=======
+    src:url(assets/fonts/HankenGrotesk-VariableFont_wght.ttf) format(truetype)
+>>>>>>> 4aa8f93d2724a3ecfa18cb3cf03c41bf0686313b
 }
 
 /* @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100;500;700;800&display=swap'); */
