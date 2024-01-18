@@ -58,12 +58,12 @@ html{
 
 body {
     font-family: var(--font-family);
-    display: flex;
-    align-items: center;
+    display: grid;
+    place-content: center;
     background-color: hsl(var(--PaleBlue));
     height: 100%;
     width: 100%;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 p {
