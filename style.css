@@ -263,6 +263,12 @@ main {
         border-bottom-right-radius: 2rem;
     }
 
+    .result_second_comment{
+        width:15rem;
+        display: block;
+        margin-inline:auto;
+    }
+
 
 
 }
